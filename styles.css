@@ -1,0 +1,79 @@
+  .setup {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .delivery {
+    font-size: 18px;
+    font-style: italic;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }
+  
+  .delivery:hover {
+    filter: blur(0);
+  }
+
+  body {
+    background: lightblue;
+  }
+  
+  section {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 1rem 0;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  #toggle {
+    display: none;
+    &:checked {
+      & ~ div {
+        transform: translateX(-50%);
+      }
+    }
+  }
+  
+  div {
+    width: 200%;
+    transition: transform .25s ease;
+  }
+  
+  span {
+    width: calc(50% - 6rem);
+    display: block;
+    float: left;
+    padding: 2rem 3rem;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    border-radius: 4px;
+  }
+.challenge{
+    cursor: pointer;
+    padding: .75rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .creds {
+    text-align: center;
+    font-size: 14px;
+  }
